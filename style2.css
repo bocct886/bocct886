@@ -1,0 +1,157 @@
+body{
+    background: black;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.hovers:hover{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+    font-weight: medium;
+}
+.mainmarks{
+    text-decoration: none;
+    font-size: 250px;
+    margin-top: none;
+    margin-bottom: -70px;
+    margin-right: 50px;
+    color: white;
+}
+.mainmarks:hover{
+    transform: scale(1);
+    font-size: 275px;
+}
+.title{
+    color: rgb(131, 131, 131);
+    font-family: 'Brandon Grotesque';
+    margin: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: medium;
+}
+.title1{
+    font-family: 'Brandon Grotesque';
+    margin: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: medium;
+    text-align: center;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 1px;
+    color:rgb(131, 131, 131);
+}
+h1{
+    color: rgb(131, 131, 131);
+    font-family: 'Brandon Grotesque';
+    margin: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(/Users/tatianaboccone/Desktop/interaction/punctuationproject/webfontkit-20220302-104145/playfairdisplay-variablefont_wght-webfont.woff2);
+  }
+  @font-face {
+    font-family: 'dantemtroman';
+    src: url('/Users/blezzeu/Downloads/punctuationproject/webfontkit-20220302-120838/dantemt-webfont.woff2') format('woff2'),
+         url('/Users/blezzeu/Downloads/punctuationproject/webfontkit-20220302-120838/dantemt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#main{
+    display:flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 900px;
+    align-items: center;
+}
+#exclaimation{
+    font-family: 'futura';
+    font-weight: bold;
+    animation: effect 2s linear infinite;
+    position: relative;
+    transition: 0.5s;
+    }
+@keyframes effect {
+            0%   {
+                color: red;
+            }
+            25%  {
+                color: yellow;
+            }
+            50%  {
+                color: blue;
+            }
+             75%  {
+                color: rgb(225, 0, 255);
+            }
+            100% {
+                color: green;
+            }
+          }
+#question{
+    font-family: 'georgia';
+            animation:  shake 0.8s  ;
+            transition: 0.5s;
+              }
+              @keyframes shake{
+                0%{
+                  transform: translateX(0)
+                  color: white;
+                }
+                25%{
+                  transform: translateX(10px);
+                  color: #3D3B3A;
+                }
+                  
+                50%{
+                  transform: translateX(-10px);
+                  color: #252524;
+                }
+                100%{
+                  transform: translateX(0px);
+                  color: white;
+                }
+              }
+            
+            #quotation{
+                font-family: 'dantemtroman';
+                position: relative;
+                opacity: 0;
+                transition: 0.5s;
+                animation: move-text 0.75s forwards;
+                color: white;
+            }
+            @keyframes move-text {
+                0% { bottom: -0.2em; opacity: 1; }
+                50% { bottom: 0.2em; }
+                100% { bottom: 0; opacity: 1; }
+            }
+            #possession{
+                font-family: 'adobe garamond';
+                position: relative;
+                opacity: 0;
+                transition: 0.5s;
+                animation: move-text 0.75s forwards;
+                color: white;
+            }
+            #period{
+                font-family: 'American Typewriter';
+                position: relative;
+                transition: 0.5s;
+                color: white;
+                animation: pop-text 0.75s forwards;
+            }
+            @keyframes pop-text {
+                0% { transform: scale(0.5)}
+                50% {transform: scale(1.5)}
+                100% { transform: scale(1)}
+            }
+            #lower{
+                font-size: 20px;
+            }
+            
